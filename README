@@ -1,0 +1,5 @@
+Simple library for encoding and decoding bencoded data.
+
+Usage:
+Bencode.encode ['foo', 'bar']           # => "l3:foo3:bare"
+Bencode.decode 'd3:fooi42e3:bar3:baze'  # => {"foo"=>42, "bar"=>"baz"}
